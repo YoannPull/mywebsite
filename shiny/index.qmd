@@ -1,0 +1,31 @@
+---
+title: "Shiny App"
+listing:
+  contents: "**/index.qmd"
+  sort: "date desc"
+  categories: false
+  #sort-ui: true
+  #filter-ui: true
+  feed: true
+  fields: [image, title]
+  type: grid
+page-layout: full
+format:
+  html:
+    css: shiny.css
+---
+
+<!-- <div class="video-background"> -->
+<!--   <video autoplay muted loop> -->
+<!--     <source src="../local-video3.mp4" type="video/mp4"> -->
+<!--     Your browser does not support the video tag. -->
+<!--   </video> -->
+<!-- </div> -->
+---
+<div class="page-content">
+  <p>Explore the shiny apps below:</p>
+</div>
+
+
+
+

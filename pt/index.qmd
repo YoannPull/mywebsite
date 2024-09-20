@@ -1,0 +1,27 @@
+---
+title: "Portfolio"
+listing:
+  contents: "*.qmd"  # Lister tous les fichiers .qmd dans le dossier pt
+  sort: "date desc"
+  type: grid  # Utilisation d'un affichage en grille pour les projets
+  grid-columns: 1  # Deux colonnes pour les projets
+  fields: [image, title, description]  # Champs utilisés pour chaque projet
+  page-size: 10  # Nombre de projets à afficher par page
+page-layout: full
+format:
+  html:
+    css: pt.css                   
+---
+
+<!-- <div class="video-background"> -->
+<!--   <video autoplay muted loop> -->
+<!--     <source src="../local-video3.mp4" type="video/mp4"> -->
+<!--     Your browser does not support the video tag. -->
+<!--   </video> -->
+<!-- </div> -->
+
+---
+
+<div class="page-content">
+  <p>Explore the projects below:</p>
+</div>

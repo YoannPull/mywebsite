@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "myfont";
+  src: url('gb.ttf') format('truetype'); /* Assurez-vous que le chemin et le format sont corrects */
+}
+
+@font-face {
+  font-family: "fraunces";
+  src: url('fraunces.ttf') format('truetype'); /* Assurez-vous que le chemin et le format sont corrects */
+}
+
+/* Gradient background animation */
+@keyframes gradientBackground {
+  0% {
+    background: linear-gradient(125deg, #FFB347 0%, #FFCC33 100%); /* Orange vif à jaune doré */
+  }
+  35% {
+    background: linear-gradient(25deg, #FF9900 0%, #FFB347 100%); /* Orange foncé à orange vif */
+  }
+  50% {
+    background: linear-gradient(25deg, #FFCC33 0%, #FFDE7D 100%); /* Jaune doré à jaune clair */
+  }
+  75% {
+    background: linear-gradient(25deg, #FFE4B5 0%, #FFCC33 100%); /* Jaune clair à doré */
+  }
+  100% {
+    background: linear-gradient(65deg, #FFD700 0%, #FFA500 100%); /* Jaune intense à orange éclatant */
+  }
+}
+
+/* Apply the gradient animation to the body */
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Georgia, Sans-Serif;
+  justify-content: center;
+  align-items: center;
+  animation: gradientBackground 30s linear infinite;
+}
+
+
+.first {
+  margin-top: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: beige;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 12vw;
+  font-weight: bold;
+  font-family: myfont;
+  color: black;
+  position: absolute;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+
+.mini {
+  font-family: myfont;
+  font-size: 2vw;
+  font-weight: light;
+  color: black;
+  position: relative;
+  top: 180px;
+  text-align: justify-content;
+}
+
+.text-left {
+  animation-name: textLeft;
+}
+
+.text-right {
+  animation-name: textRight;
+}
+
+@keyframes textLeft {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 18%;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes textRight {
+  0% {
+    right: -50%;
+  }
+  100% {
+    right: 20%;
+    transform: translateX(50%);
+  }
+}
+
+#combined {
+  display: none;
+}
+
+#after {
+  display: none;
+}
+
+@keyframes combineText {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#combined.show {
+  display: block;
+  animation: combineText 1s forwards;
+}
+
+@keyframes afterText {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#after.show {
+  display: block;
+  animation: afterText 4s backwards;
+}
+
+/* Navbar */
+.navbar-title {
+  font-family: Sans-Serif;
+}
+
+.navbar-dark .navbar-brand {
+  text-align: right;
+}
+
+.navbar-nav {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.navbar-nav .nav-item {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Georgia, serif;
+  font-size: 20px;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  font-family: Georgia, serif;
+}
+
+.page-footer-title {
+  font-family: Sans-Serif;
+}

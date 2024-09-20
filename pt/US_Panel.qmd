@@ -1,0 +1,7 @@
+---
+title: "Climate Panel US"
+description: "A climate index was obtained using different methods. The objective of this project is to measure the impact of climate risk on the business sectors of S&P500 companies. To achieve this, a panel analysis was conducted in R."
+image: "img/panel.png"  # Image associée au projet
+---
+
+Link to the GitHub :   [![GitHub Logo](https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg){width=30px height=30px}](https://github.com/YoannPull/Climate_PanelUS)

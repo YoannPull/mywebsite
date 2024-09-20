@@ -1,0 +1,43 @@
+project:
+  type: website
+
+website:
+  cookie-consent:
+    type: express
+    style: simple
+    palette: dark
+  google-analytics:
+    tracking-id: "G-X7Q4RX6KPB"
+    anonymize-ip: true
+
+  navbar:
+    background: "transparent"
+    foreground: "black"
+    right:
+      - text: "Home"
+        href: index.qmd
+      - text: "Portfolio"
+        href: pt/index.qmd  # Lien vers la page principale Portfolio
+      - text: "Shiny App"
+        href: shiny/index.qmd
+      - text: "Contact"
+        href: contact.qmd
+  page-footer: 
+    background: "transparent"
+    foreground: "black"
+    left: "Copyright 2024" 
+    right: 
+      - icon: linkedin
+        href: https://linkedin.com/company/vistales
+      - icon: twitter 
+        href: https://twitter.com/vistales_ 
+      - icon: instagram
+        href: https://instagram.com/vistales_     
+  
+format:
+  html:
+    #theme: mint
+    css: styles.css
+    toc: false
+    include-in-header: gtm_code_head.html
+    include-before-body: gtm_code_body.html

@@ -1,0 +1,19 @@
+--- 
+title: "Life expectancy of a couple"
+navbar: false
+format: 
+  dashboard:
+      orientation: rows
+      css: style.css
+      nav-buttons:
+      - icon: box-arrow-left
+        href: https://vistales.github.io/Home/_site/db/
+image: viager.jpeg
+css: style.css
+execute: 
+  message: false
+  warning: false
+
+--- 
+<!-- ~/Desktop/personal_website/personal_website/shiny/App1/index.qmd -->
+<iframe src="https://yoannpull.shinyapps.io/Esperance_Viager/" width="100%" height="600px" frameborder="0"></iframe>

@@ -1,0 +1,88 @@
+/* Style de la barre de navigation */
+.navbar {
+  background-color: #404140; /* Gris Square Management */
+  color: #ffffff; /* Texte blanc pour contraste */
+  padding: 15px 20px;
+}
+
+.navbar a {
+  color: #ffffff; /* Couleur du texte des liens dans la navbar */
+  font-family: 'fraunces', serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #bd8e43; /* Doré pour l'effet hover */
+}
+
+/* Centrer le texte et appliquer une typographie élégante */
+.center-text {
+  text-align: center;
+  font-size: 28px; /* Légèrement plus grand pour attirer l'attention */
+  font-weight: bold;
+  color: #404140; /* Gris sombre, harmonisé avec le thème Square */
+  font-family: 'fraunces', serif; /* Font élégante avec une alternative de secours */
+  letter-spacing: 1px; /* Espacement pour améliorer la lisibilité */
+  margin-bottom: 20px; /* Ajouter de l'espace en bas */
+}
+
+/* Style pour les boîtes colorées avec des couleurs de Square Management */
+.box {
+  width: 89%;
+  height: auto; /* Ajuste la hauteur en fonction du contenu */
+  padding: 30px; /* Plus de padding pour un effet aéré */
+  background-color: #bd8e43; /* Doré de Square Management */
+  color: #FFFFFF; /* Texte blanc pour un bon contraste */
+  margin-bottom: 50px;
+  font-size: 20px;
+  border-radius: 12px; /* Légèrement plus arrondi pour un effet moderne */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Ombre plus subtile */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation sur hover */
+}
+
+.box:hover {
+  transform: translateY(-10px); /* L'effet hover remonte légèrement la boîte */
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2); /* Ombre plus marquée en hover */
+}
+
+/* Amélioration du style général de la page */
+body {
+  background-color: #f5f5f5; /* Un gris clair doux en arrière-plan */
+  font-family: 'fraunces', Georgia, serif; /* Cohérence dans la typographie */
+  color: #404140; /* Texte général gris foncé */
+  margin: 0;
+  padding: 0;
+}
+
+/* Ajuster les conteneurs pour un meilleur alignement */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+/* Style du footer avec une couleur plus claire */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #707070; /* Gris plus clair pour le footer */
+  color: #fff; /* Texte blanc dans le footer */
+  font-family: 'Georgia', serif;
+}
+
+.footer a {
+  color: #bd8e43; /* Doré pour les liens du footer */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffffff; /* Blanc lors du survol */
+}
