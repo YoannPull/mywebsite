@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "",
-    "section": "",
-    "text": "Your browser does not support the video tag. \n\n\n\n\nYoann\n\n\nPull\n\n\nYoann Pull\n\n\n\nPHD Candidate in Economics\n\n\n↓ Scroll down to learn more ↓\n\n\n\n\n\n\n\nAbout Me\n\n\nWelcome to my personal webpage! I’m Yoann Pull, a PhD candidate in Economics at the Laboratory of Economics in Orléans and a quantitative researcher at Square Management. My research focuses on climate risks and their impact on financial markets, with the goal of helping financial institutions become more resilient to these emerging risks.\n\n\nOn this site, you’ll find some of the projects and Shiny applications I enjoy working on during my free time, using data I come across. You can also download my CV and find my contact information on this website.\n\n\nResearch Interests: Financial econometrics, alternative data, financial markets, climate finance."
-  },
-  {
     "objectID": "pt/US_Panel.html",
     "href": "pt/US_Panel.html",
     "title": "Climate Panel US",
@@ -56,11 +49,11 @@
     "text": "Repository Navigation\n\nData Exploration and Insight Visualization: Dive deep into the dataset to uncover the intricacies of the London Airbnb market.\nModel Construction: Build multiple models, each undergoing parameter optimization using a validation set.\nPredictions: Test the top-performing models from each category on a generalization set. The standout model from this stage will be selected."
   },
   {
-    "objectID": "shiny/index.html",
-    "href": "shiny/index.html",
-    "title": "\nShiny App\n",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
     "section": "",
-    "text": "Shiny App\n\n\nExplore the shiny apps below:\n\n\n  Your browser does not support the video tag. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJob Finder\n\n\n\n\n\n\n\n\n\n\n\n\n\nLife expectancy of a couple\n\n\n\n\n\n\n\n\n\n\n\n\n\nClimate risk\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Your browser does not support the video tag. \n\n\n\n\nYoann\n\n\nPull\n\n\nYoann Pull\n\n\n\nPHD Candidate in Economics\n\n\n↓ Scroll down to learn more ↓\n\n\n\n\n\n\n\nAbout Me\n\n\nWelcome to my personal webpage! I’m Yoann Pull, a PhD candidate in Economics at the Laboratory of Economics in Orléans and a quantitative researcher at Square Management. My research focuses on climate risks and their impact on financial markets, with the goal of helping financial institutions become more resilient to these emerging risks.\n\n\nOn this site, you’ll find some of the projects and Shiny applications I enjoy working on during my free time, using data I come across. You can also download my CV and find my contact information on this website.\n\n\nResearch Interests: Financial econometrics, alternative data, financial markets, climate finance."
   },
   {
     "objectID": "contact/index.html",
@@ -68,6 +61,13 @@
     "title": "",
     "section": "",
     "text": "Your browser does not support the video tag. \n\n\nContact Me\n\nIf you would like to get in touch, feel free to connect with me on LinkedIn, check out my GitHub for projects, or send me an email. I’m always open to discussions about research, collaborations, and new opportunities.\n\nLinkedIn: Yoann Pull\nGitHub: yoannpull\nEmail: yoann.pull.pro@gmail.com"
+  },
+  {
+    "objectID": "shiny/index.html",
+    "href": "shiny/index.html",
+    "title": "\nShiny App\n",
+    "section": "",
+    "text": "Shiny App\n\n\nExplore the shiny apps below:\n\n\n  Your browser does not support the video tag. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJob Finder\n\n\n\n\n\n\n\n\n\n\n\n\n\nLife expectancy of a couple\n\n\n\n\n\n\n\n\n\n\n\n\n\nClimate risk\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "pt/VaR-Project.html",
