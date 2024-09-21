@@ -1,0 +1,269 @@
+@font-face {
+  font-family: "myfont";
+  src: url('gb.ttf') format('truetype'); /* Assurez-vous que le chemin et le format sont corrects */
+}
+
+@font-face {
+  font-family: "fraunces";
+  src: url('fraunces.ttf') format('truetype'); /* Assurez-vous que le chemin et le format sont corrects */
+}
+
+/* Style de la vidéo en fond */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10; /* Place la vidéo derrière tout */
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+  object-fit: cover;
+}
+
+/* Navbar transparente qui ne bloque pas la vidéo */
+.navbar {
+  background-color: transparent; /* Navbar totalement transparente */
+  color: #ffffff; /* Texte blanc pour contraste sur la vidéo */
+  padding: 15px 20px;
+  position: absolute; /* Absolute pour qu'elle ne prenne pas de place dans le flux */
+  width: 100%; /* Prend toute la largeur de l'écran */
+  top: 0;
+  z-index: 1; /* La navbar est toujours au-dessus de la vidéo mais transparente */
+}
+
+.navbar a {
+  color: black; /* Couleur du texte des liens dans la navbar */
+  font-family: 'fraunces', serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+/* Changement de couleur lors du hover */
+.navbar a:hover {
+  color: #f5f5f5; /* Gris clair pour l'effet hover */
+}
+
+/* Changement de couleur pour le lien actif */
+.navbar a.active {
+  color: #f5f5f5; /* Couleur pour le lien actif (page courante) */
+}
+
+/* Changement de couleur pour le lien lorsqu'il est focalisé */
+.navbar a:focus {
+  color: #f5f5f5;
+}
+
+/* Centrer le texte et appliquer une typographie élégante */
+.center-text {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff; /* Texte blanc pour un bon contraste sur la vidéo */
+  font-family: 'fraunces', serif;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* Style pour les boîtes */
+.box {
+  width: 89%;
+  height: auto;
+  padding: 30px;
+  background-color: rgba(64, 64, 65, 0.8); /* Boîte avec opacité pour voir la vidéo en dessous */
+  color: #FFFFFF; /* Texte blanc pour un bon contraste */
+  margin-bottom: 50px;
+  font-size: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajuster les conteneurs pour un meilleur alignement */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+/* Style du footer transparent au-dessus de la vidéo */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: transparent; /* Footer transparent pour voir la vidéo en dessous */
+  color: #ffffff; /* Texte blanc */
+  font-family: 'Georgia', serif;
+  position: relative;
+  z-index: 1;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: grey;
+}
+
+/* Text animation styles */
+.text {
+  font-size: 12vw;
+  font-weight: bold;
+  font-family: myfont;
+  color: #ffffff; /* Blanc pur */
+  position: absolute;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); /* Grande ombre noire pour contraster sur le gris clair */
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+
+.mini {
+  font-family: myfont;
+  font-size: 2vw;
+  font-weight: light;
+  color: #ffffff; /* Couleur blanche pour le texte */
+  position: relative;
+  top: 180px;
+  text-align: center;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Ombre noire pour le texte, améliorant le contraste */
+}
+
+
+.text-left {
+  animation-name: textLeft;
+}
+
+.text-right {
+  animation-name: textRight;
+}
+
+@keyframes textLeft {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 18%;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes textRight {
+  0% {
+    right: -50%;
+  }
+  100% {
+    right: 20%;
+    transform: translateX(50%);
+  }
+}
+
+/* Combined text and after effects */
+#combined {
+  display: none;
+}
+
+#after {
+  display: none;
+}
+
+@keyframes combineText {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#combined.show {
+  display: block;
+  animation: combineText 1s forwards;
+}
+
+@keyframes afterText {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#after.show {
+  display: block;
+  animation: afterText 4s backwards;
+}
+
+.navbar a.active {
+  color: #ffffff !important; /* Blanc pur */
+  background-color: transparent !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre noire subtile */
+}
+
+
+/* Texte de défilement en bas de l'écran */
+.scroll-down {
+  font-family: 'fraunces', serif;
+  font-size: 20px;
+  color: #ffffff; /* Couleur blanche pour contraster avec le fond */
+  position: relative;
+  top: 220px; /* Ajuster cette valeur pour placer le texte en bas */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Petite ombre pour améliorer la lisibilité */
+  opacity: 0; /* Initialement invisible */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  transform: translateY(10px); /* Déplacement initial vers le bas */
+}
+
+.scroll-down.show {
+  opacity: 1; /* Rendre visible */
+  transform: translateY(0); /* Remonter à la position normale */
+}
+
+
+/* Ajouter un fond semi-transparent derrière la section de description */
+#description {
+  background-color: rgba(0, 0, 0, 1); /* Fond noir semi-transparent */
+  padding: 50px;
+  border-radius: 10px; /* Pour adoucir les bords */
+}
+
+/* Texte avec une ombre plus marquée */
+#description h2, #description p {
+  text-shadow: 5px 5px 16px rgba(0, 0, 0, 0.8); /* Ombre plus forte pour un meilleur contraste */
+  color: #ffffff; /* Couleur blanche */
+}
+
+
+

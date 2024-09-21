@@ -1,0 +1,35 @@
+---
+title: ""
+listing:
+  contents: "**/index.qmd"
+  sort: "date desc"
+  categories: false
+  #sort-ui: true
+  #filter-ui: true
+  feed: true
+  fields: [image, title]
+  type: grid
+page-layout: full
+format:
+  html:
+    css: shiny.css
+---
+
+<!-- Appliquer la classe center-text sur le titre -->
+<h1 class="center-text">Shiny App</h1>
+
+<p class="text-body">
+  Explore the shiny apps below:
+</p>
+
+
+<div class="video-background">
+  <video autoplay muted loop>
+    <source src="../local-video4.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+
+
+

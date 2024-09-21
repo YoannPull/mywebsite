@@ -1,0 +1,27 @@
+---
+title: ""
+page-layout: full
+format:
+  html:
+    include-in-header: |
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    css: contact.css
+---
+
+<div class="video-background">
+  <video autoplay muted loop>
+    <source src="../local-video4.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<p class="center-text">Contact Me</p>
+
+If you would like to get in touch, feel free to connect with me on LinkedIn, check out my GitHub for projects, 
+  or send me an email. I’m always open to discussions about research, collaborations, and new opportunities.
+  
+- **LinkedIn:** [Yoann Pull](https://www.linkedin.com/in/yoann-pull/)
+
+- **GitHub:** [yoannpull](https://github.com/YoannPull)
+
+- **Email:** [yoann.pull.pro@gmail.com](mailto:yoann.pull.pro@gmail.com)
