@@ -1,5 +1,5 @@
 ---
-title: "Portfolio"
+title: ""
 listing:
   contents: "*.qmd"  # Lister tous les fichiers .qmd dans le dossier pt
   sort: "date desc"
@@ -13,15 +13,22 @@ format:
     css: pt.css                   
 ---
 
-<!-- <div class="video-background"> -->
-<!--   <video autoplay muted loop> -->
-<!--     <source src="../local-video3.mp4" type="video/mp4"> -->
-<!--     Your browser does not support the video tag. -->
-<!--   </video> -->
-<!-- </div> -->
 
----
-
-<div class="page-content">
-  <p>Explore the projects below:</p>
+<div class="video-background">
+  <video autoplay muted loop>
+    <source src="../local-video4.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </div>
+
+<!-- Appliquer la classe center-text sur le titre -->
+<h1 class="center-text">Portfolio</h1>
+
+<p class="text-body">
+  Here you will find a collection of projects :
+</p>
+
+
+
+
+

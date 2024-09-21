@@ -1,12 +1,12 @@
 /* Style de la barre de navigation */
 .navbar {
-  background-color: #404140; /* Gris Square Management */
-  color: #ffffff; /* Texte blanc pour contraste */
+  background-color: #f5f5f5; /* Ivoire */
+  color: #000000; /* Texte noir pour contraste */
   padding: 15px 20px;
 }
 
 .navbar a {
-  color: #ffffff; /* Couleur du texte des liens dans la navbar */
+  color: #000000; /* Couleur du texte des liens dans la navbar */
   font-family: 'fraunces', serif;
   font-weight: bold;
   text-decoration: none;
@@ -15,7 +15,7 @@
 }
 
 .navbar a:hover {
-  color: #bd8e43; /* Doré pour l'effet hover */
+  color: #f5f5f5; /* Gris sombre pour l'effet hover */
 }
 
 /* Centrer le texte et appliquer une typographie élégante */
@@ -23,18 +23,18 @@
   text-align: center;
   font-size: 28px; /* Légèrement plus grand pour attirer l'attention */
   font-weight: bold;
-  color: #404140; /* Gris sombre, harmonisé avec le thème Square */
+  color: #404140; /* Gris sombre harmonisé avec le thème Square */
   font-family: 'fraunces', serif; /* Font élégante avec une alternative de secours */
   letter-spacing: 1px; /* Espacement pour améliorer la lisibilité */
   margin-bottom: 20px; /* Ajouter de l'espace en bas */
 }
 
-/* Style pour les boîtes colorées avec des couleurs de Square Management */
+/* Style pour les boîtes */
 .box {
   width: 89%;
   height: auto; /* Ajuste la hauteur en fonction du contenu */
   padding: 30px; /* Plus de padding pour un effet aéré */
-  background-color: #bd8e43; /* Doré de Square Management */
+  background-color: #404140; /* Gris sombre pour le fond des boîtes */
   color: #FFFFFF; /* Texte blanc pour un bon contraste */
   margin-bottom: 50px;
   font-size: 20px;
@@ -67,22 +67,22 @@ body {
   padding: 50px 0;
 }
 
-/* Style du footer avec une couleur plus claire */
+/* Style du footer avec un fond ivoire */
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: #707070; /* Gris plus clair pour le footer */
-  color: #fff; /* Texte blanc dans le footer */
+  background-color: #f5f5f5; /* Ivoire */
+  color: #404140; /* Texte gris foncé */
   font-family: 'Georgia', serif;
 }
 
 .footer a {
-  color: #bd8e43; /* Doré pour les liens du footer */
+  color: #404140; /* Gris sombre pour les liens du footer */
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .footer a:hover {
-  color: #ffffff; /* Blanc lors du survol */
+  color: #000000; /* Noir lors du survol */
 }

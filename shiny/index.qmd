@@ -1,5 +1,5 @@
 ---
-title: "Shiny App"
+title: ""
 listing:
   contents: "**/index.qmd"
   sort: "date desc"
@@ -15,15 +15,19 @@ format:
     css: shiny.css
 ---
 
-<!-- <div class="video-background"> -->
-<!--   <video autoplay muted loop> -->
-<!--     <source src="../local-video3.mp4" type="video/mp4"> -->
-<!--     Your browser does not support the video tag. -->
-<!--   </video> -->
-<!-- </div> -->
----
-<div class="page-content">
-  <p>Explore the shiny apps below:</p>
+<!-- Appliquer la classe center-text sur le titre -->
+<h1 class="center-text">Shiny App</h1>
+
+<p class="text-body">
+  Explore the shiny apps below:
+</p>
+
+
+<div class="video-background">
+  <video autoplay muted loop>
+    <source src="../local-video4.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </div>
 
 

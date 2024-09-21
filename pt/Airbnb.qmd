@@ -1,6 +1,10 @@
 ---
 title: "Airbnb Project"
 description: "Predicting Airbnb rental prices in London using a model to estimate potential investment returns and assist in strategic decision-making for affordable accommodations across the city."
+page-layout: full
+format: 
+  html:
+    css: styles.css
 image: "img/airbnb.jpeg"  # Image associée au projet
 ---
 

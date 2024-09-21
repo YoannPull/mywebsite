@@ -1,6 +1,9 @@
 ---
 title: "VaR Project"
 description: "This project aims to estimate the Value at Risk (VaR) of UnitedHealth Group's stock and validate the accuracy through backtesting. The analysis covers the period from January 4, 2010, to October 3, 2023, with the estimation performed from 2010 to 2018, followed by backtesting from 2018 to 2023."
+html:
+  link-external-newwindow: true
+  css: styles.css
 image: "img/var.png"  # Image associée au projet
 ---
 
