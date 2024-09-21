@@ -7,7 +7,7 @@ format:
       css: style.css
       nav-buttons:
       - icon: box-arrow-left
-        href: https://vistales.github.io/Home/_site/db/
+        href: https://yoannpull.github.io/mywebsite/shiny/
 image: ff.jpeg
 css: style.css
 execute: 
