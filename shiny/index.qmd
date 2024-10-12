@@ -2,13 +2,10 @@
 title: ""
 listing:
   contents: "**/index.qmd"
-  sort: "date desc"
-  categories: false
-  #sort-ui: true
-  #filter-ui: true
-  feed: true
-  fields: [image, title]
-  type: grid
+  type: grid  # Utilisation d'un affichage en grille pour les projets
+  grid-columns: 1  # Deux colonnes pour les projets
+  fields: [image, title, description]  # Champs utilisés pour chaque projet
+  page-size: 10  # Nombre de projets à afficher par page
 page-layout: full
 format:
   html:
@@ -23,12 +20,10 @@ format:
 </p>
 
 
-<div class="video-background">
-  <video autoplay muted loop>
-    <source src="../local-video4.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+<!-- Gradient de fond -->
+<div class="gradient-background" style="background: linear-gradient(135deg, #ffffff, #c0c0c0); position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;">
 </div>
+
 
 
 

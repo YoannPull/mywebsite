@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
@@ -224,44 +224,17 @@ Shiny App
 <p class="text-body">
 Explore the shiny apps below:
 </p>
-<div class="video-background">
-<p><video autoplay="" muted="" loop=""> <source src="../local-video4.mp4" type="video/mp4"> Your browser does not support the video tag. </video></p>
+<!-- Gradient de fond -->
+<div class="gradient-background" style="background: linear-gradient(135deg, #ffffff, #c0c0c0); position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;">
+
 </div>
 
 
 
 
 <div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1726914787123" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
-<a href="../shiny/Data Finder/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="../shiny/Data Finder/job.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Job Finder
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1726914641869" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
-<a href="../shiny/Life expectancy of a couple/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="../shiny/Life expectancy of a couple/viager.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Life expectancy of a couple
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1726914771681" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
+<div class="list grid quarto-listing-cols-1">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1726914771681" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
 <a href="../shiny/Physical Risk/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -271,6 +244,43 @@ Life expectancy of a couple
 <h5 class="no-anchor card-title listing-title">
 Climate risk
 </h5>
+<div class="card-text listing-description">
+
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1726914787123" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
+<a href="../shiny/Data Finder/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../shiny/Data Finder/job.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Job Finder
+</h5>
+<div class="card-text listing-description">
+
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1726914641869" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
+<a href="../shiny/Life expectancy of a couple/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../shiny/Life expectancy of a couple/viager.jpeg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Life expectancy of a couple
+</h5>
+<div class="card-text listing-description">
+
+</div>
 </div>
 </div>
 </a>

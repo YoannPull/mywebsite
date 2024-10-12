@@ -1,12 +1,12 @@
-@font-face {
+/*@font-face {
   font-family: "myfont";
   src: url('gb.ttf') format('truetype'); /* Assurez-vous que le chemin et le format sont corrects */
-}
+/*}*/
 
-@font-face {
+/*@font-face {
   font-family: "fraunces";
   src: url('fraunces.ttf') format('truetype'); /* Assurez-vous que le chemin et le format sont corrects */
-}
+/*}*/
 
 /* Style de la vidéo en fond */
 .video-background {
@@ -136,7 +136,7 @@
   font-family: myfont;
   color: #ffffff; /* Blanc pur */
   position: absolute;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); /* Grande ombre noire pour contraster sur le gris clair */
+  text-shadow: none; /* Grande ombre noire pour contraster sur le gris clair */
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
@@ -261,7 +261,7 @@
 
 /* Texte avec une ombre plus marquée */
 #description h2, #description p {
-  text-shadow: 5px 5px 16px rgba(0, 0, 0, 0.8); /* Ombre plus forte pour un meilleur contraste */
+  text-shadow: none; /* Ombre plus forte pour un meilleur contraste */
   color: #ffffff; /* Couleur blanche */
 }
 

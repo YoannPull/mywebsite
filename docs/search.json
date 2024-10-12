@@ -51,23 +51,23 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "",
+    "title": "\nYoann Pull\n",
     "section": "",
-    "text": "Your browser does not support the video tag. \n\n\n\n\nYoann\n\n\nPull\n\n\nYoann Pull\n\n\n\nPHD Candidate in Economics\n\n\n↓ Scroll down to learn more ↓\n\n\n\n\n\n\n\nAbout Me\n\n\nWelcome to my personal webpage! I’m Yoann Pull, a PhD candidate in Economics at the Laboratory of Economics in Orléans and a quantitative researcher at Square Management. My research focuses on climate risks and their impact on financial markets, with the goal of helping financial institutions become more resilient to these emerging risks.\n\n\nOn this site, you’ll find some of the projects and Shiny applications I enjoy working on during my free time, using data I come across. You can also download my CV and find my contact information on this website.\n\n\nResearch Interests: Financial econometrics, alternative data, financial markets, climate finance."
+    "text": "Yoann Pull\n\n\nPhD Candidate in Economics\n\n\n\n↓ Scroll down to learn more ↓\n\n\n\n\n\nAbout Me\n\n\nWelcome to my personal webpage! I’m Yoann Pull, a PhD candidate in Economics at the Laboratory of Economics in Orléans and a quantitative researcher at Square Management. My research focuses on climate risks and their impact on financial markets, aiming to help financial institutions become more resilient to these emerging risks.\n\n\nOn this site, you’ll find some of the projects and Shiny applications I enjoy working on during my free time, using data I come across. You can also download my CV and find my contact information here.\n\n\nResearch Interests: Financial econometrics, alternative data, financial markets, climate finance."
   },
   {
     "objectID": "contact/index.html",
     "href": "contact/index.html",
     "title": "",
     "section": "",
-    "text": "Your browser does not support the video tag. \n\n\nContact Me\n\nIf you would like to get in touch, feel free to connect with me on LinkedIn, check out my GitHub for projects, or send me an email. I’m always open to discussions about research, collaborations, and new opportunities.\n\nLinkedIn: Yoann Pull\nGitHub: yoannpull\nEmail: yoann.pull.pro@gmail.com"
+    "text": "Contact Me\n\nIf you would like to get in touch, feel free to connect with me on LinkedIn, check out my GitHub for projects, or send me an email. I’m always open to discussions about research, collaborations, and new opportunities.\n\nLinkedIn: Yoann Pull\nGitHub: yoannpull\nEmail: yoann.pull.pro@gmail.com"
   },
   {
     "objectID": "shiny/index.html",
     "href": "shiny/index.html",
     "title": "\nShiny App\n",
     "section": "",
-    "text": "Shiny App\n\n\nExplore the shiny apps below:\n\n\n  Your browser does not support the video tag. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJob Finder\n\n\n\n\n\n\n\n\n\n\n\n\n\nLife expectancy of a couple\n\n\n\n\n\n\n\n\n\n\n\n\n\nClimate risk\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Shiny App\n\n\nExplore the shiny apps below:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nClimate risk\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJob Finder\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLife expectancy of a couple\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "pt/VaR-Project.html",
@@ -81,6 +81,6 @@
     "href": "pt/index.html",
     "title": "\nPortfolio\n",
     "section": "",
-    "text": "Your browser does not support the video tag. \n\n\n\nPortfolio\n\n\nHere you will find a collection of projects :\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAirbnb Project\n\n\nPredicting Airbnb rental prices in London using a model to estimate potential investment returns and assist in strategic decision-making for affordable accommodations across…\n\n\n\n\n\n\n\n\n\n\n\n\n\nClimate Panel US\n\n\nA climate index was obtained using different methods. The objective of this project is to measure the impact of climate risk on the business sectors of S&P500 companies. To…\n\n\n\n\n\n\n\n\n\n\n\n\n\nVaR Project\n\n\nThis project aims to estimate the Value at Risk (VaR) of UnitedHealth Group’s stock and validate the accuracy through backtesting. The analysis covers the period from…\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Portfolio\n\n\nHere you will find a collection of projects :\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAirbnb Project\n\n\nPredicting Airbnb rental prices in London using a model to estimate potential investment returns and assist in strategic decision-making for affordable accommodations across…\n\n\n\n\n\n\n\n\n\n\n\n\n\nClimate Panel US\n\n\nA climate index was obtained using different methods. The objective of this project is to measure the impact of climate risk on the business sectors of S&P500 companies. To…\n\n\n\n\n\n\n\n\n\n\n\n\n\nVaR Project\n\n\nThis project aims to estimate the Value at Risk (VaR) of UnitedHealth Group’s stock and validate the accuracy through backtesting. The analysis covers the period from…\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
