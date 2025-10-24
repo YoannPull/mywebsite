@@ -12,7 +12,12 @@ Below are my main courses, with materials. For each course I indicate where it w
 
 - **Support Vector Machines (SVM)**.  
   *Taught at:* University of Orléans, Master ESA (M2) -  (Fall 2025)  
-  **Materials:** [PDF](courses/SVM_Course.pdf){target="_blank" rel="noopener"} · [Slides](slides/Support_Vector_Machines.pdf){target="_blank" rel="noopener"}  <!-- remove if no slides -->
+  **Materials:** [PDF - French version](courses/SVM_Course_fr.pdf){target="_blank" rel="noopener"} · [PDF - English version](courses/SVM_Course_en.pdf){target="_blank" rel="noopener"} . [Slides](slides/Support_Vector_Machines.pdf){target="_blank" rel="noopener"}  <!-- remove if no slides -->
+  
+
+- **Interpretable Machine Learning (SVM)**.  
+  *Taught at:* University of Orléans, Master ESA (M2) -  (Fall 2025)  
+  **Materials:** [Slides](slides/Master ESA 2025 - Interpretable Machine Learning.pdf){target="_blank" rel="noopener"}  <!-- remove if no slides -->
 
 - **Integrating Climate Risk into Financial Risk Management **.  
   *Taught at:* University of Bordeaux, Master IREF (M2) - Fall 2024  
