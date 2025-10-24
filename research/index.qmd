@@ -1,0 +1,30 @@
+---
+title: "Research"
+page-layout: article
+format:
+  html:
+    css: reasearch.css
+---
+
+Below are my working papers and published articles. Links to PDFs, slides, code, ...
+
+## Working Papers
+
+- **A Bayesian Approach to Probability Default Model Calibration: Theoretical and Empirical Insights on the Jeffreys Test - (2025)**
+  *with Christophe Hurlin, Yoann Pull*  
+[Code - Incoming](https://github.com/YoannPull){target="_blank" rel="noopener"} · [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5291474){target="_blank" rel="noopener"}
+
+- **Credit Risk under Geopolitical Uncertainty: A Methodological Framework - (2025)**
+  *with Guillaume Flament, Christophe Hurlin, Quentin Lajaunie, Yoann Pull*  
+  [Code - Incoming]() .
+  [SSRN - Incoming]()
+
+<!--## Publications
+
+- **Title of Published Paper 1** (Journal Name, Year)  
+  *with Coauthor D, Coauthor E*  
+  — [Publisher page](https://publisher.example/article){target="_blank" rel="noopener"} · [Preprint PDF](assets/papers/published1_preprint.pdf){target="_blank" rel="noopener"} · [BibTeX](assets/bib/published1.bib){target="_blank" rel="noopener"} · [DOI](https://doi.org/xx.xxxx/xxxxx){target="_blank" rel="noopener"}
+
+- **Title of Published Paper 2** (Journal Name, Year)  
+  *with Coauthor F*  
+  — [Publisher page](https://publisher.example/article2){target="_blank" rel="noopener"} · [Preprint PDF](assets/papers/published2_preprint.pdf){target="_blank" rel="noopener"} · [BibTeX](assets/bib/published2.bib){target="_blank" rel="noopener"} · [DOI](https://doi.org/xx.xxxx/xxxxx){target="_blank" rel="noopener"}-->

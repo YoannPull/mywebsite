@@ -1,0 +1,19 @@
+---
+title: "Teaching"
+page-layout: article
+format:
+  html:
+    css: teaching.css
+---
+
+Below are my main courses, with materials. For each course I indicate where it was taught and provide PDF/Slides links.
+
+## Courses
+
+- **Support Vector Machines (SVM)**.  
+  *Taught at:* University of Orléans, Master ESA (M2) -  (Fall 2025)  
+  **Materials:** [PDF](courses/SVM_Course.pdf){target="_blank" rel="noopener"} · [Slides](slides/Support_Vector_Machines.pdf){target="_blank" rel="noopener"}  <!-- remove if no slides -->
+
+- **Integrating Climate Risk into Financial Risk Management **.  
+  *Taught at:* University of Bordeaux, Master IREF (M2) - Fall 2024  
+  *Taught at:* ENSAI (M2)  - Fall 2024  

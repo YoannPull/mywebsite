@@ -16,13 +16,12 @@ website:
     right:
       - text: "Home"
         href: index.qmd
-      - text: "Portfolio"
-        href: pt/index.qmd  # Lien vers la page principale Portfolio
-      - text: "Shiny App"
-        href: shiny/index.qmd
+      - text: "Research"
+        href: research/index.qmd
+      - text: "Teaching"
+        href: teaching/index.qmd
       - text: "Contact"
         href: contact/index.qmd
-
   page-footer: 
     background: "transparent"
     foreground: "black"

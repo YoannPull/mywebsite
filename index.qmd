@@ -31,15 +31,23 @@ embed-resources: true
 <div id="description" style="padding: 80px 20px; text-align: center; background-color: rgba(255, 255, 255, 0.8); border-radius: 10px; border: 1px solid #e0e0e0;">
   <h2 style="color: #404140; font-weight: normal; text-shadow: none;">About Me</h2>
   <p style="color: #404140; margin-top: 20px; font-size: 18px; line-height: 1.6;">
-    Welcome to my personal webpage! I’m Yoann Pull, a PhD candidate in Economics at the Laboratory of Economics in Orléans and a quantitative researcher at Square Management. My research focuses on climate risks and their impact on financial markets, aiming to help financial institutions become more resilient to these emerging risks.
+    I'm Yoann Pull, a PhD candidate in Economics at the 
+    <a href="https://www.leo-univ-orleans.fr/en/" target="_blank" rel="noopener" style="color: #000000; text-decoration: underline;">Laboratoire d'Économie d'Orléans (LEO)</a>, University of Orléans, 
+    and a quantitative researcher at Square Management. I am doing my PhD under the supervision of 
+    <a href="https://sites.google.com/view/christophe-hurlin/home" target="_blank" rel="noopener" style="color: #000000; text-decoration: underline;">Professor Christophe Hurlin</a>. 
+    I develop robust econometric and machine-learning methods to measure new and emerging risks in credit risk. 
+    I have taught courses at the University of Orléans, the University of Bordeaux, and ENSAI.
   </p>
   <p style="color: #404140; font-size: 18px; line-height: 1.6;">
-    On this site, you’ll find some of the projects and Shiny applications I enjoy working on during my free time, using data I come across. You can also download my <a href="CV_Yoann.pdf" target="_blank" style="color: #000000; text-decoration: underline;">CV</a> and find my contact information here.
+    On this site you’ll find my research papers and some teaching resources. You can also 
+    <a href="CV_Yoann.pdf" target="_blank" style="color: #000000; text-decoration: underline;">download my CV (PDF)</a> 
+    and find ways to reach me on the contact page.
   </p>
   <p style="color: #404140; font-size: 18px; line-height: 1.6;">
-    <strong>Research Interests</strong>: Financial econometrics, alternative data, financial markets, climate finance.
+    <strong>Research interests:</strong> financial econometrics; machine learning; credit risk; alternative data; emerging risks.
   </p>
 </div>
+
 
 
 
