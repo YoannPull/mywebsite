@@ -3,28 +3,49 @@ title: "Research"
 page-layout: article
 format:
   html:
-    css: reasearch.css
+    css: ../styles.css
+    link-external-newwindow: true
 ---
 
-Below are my working papers and published articles. Links to PDFs, slides, code, ...
+My research develops robust econometric, Bayesian, and sequential methods for credit-risk model validation, monitoring, and stress testing.
+
+## Publications
+
+::: {.featured}
+<span class="kicker">★ Featured paper</span>
+<span class="f-title">A Bayesian Approach to Probability of Default Model Calibration: Theoretical and Empirical Insights on the Jeffreys Test</span>
+<span class="authors">Christophe Hurlin and <span class="me">Yoann Pull</span></span> · <span class="venue">European Journal of Operational Research (accepted, 2026)</span>
+<p class="summary">A Bayesian reappraisal of the Jeffreys test used by supervisors to validate probability-of-default calibration, with theoretical results and empirical evidence on when the test can be trusted for credit-risk model validation.</p>
+<div class="links">
+  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5291474" target="_blank" rel="noopener">SSRN</a>
+</div>
+:::
 
 ## Working Papers
 
-- **A Bayesian Approach to Probability Default Model Calibration: Theoretical and Empirical Insights on the Jeffreys Test - (2025)**
-  *with Christophe Hurlin, Yoann Pull*  
-[Code - Incoming](https://github.com/YoannPull){target="_blank" rel="noopener"} · [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5291474){target="_blank" rel="noopener"}
+::: {.entry}
+<span class="year">2026</span>
+<span class="title">Generalized Impulse Responses of Portfolio Default Probabilities: A Modular Framework with an Application to Geopolitical Risk</span>
+<span class="authors">Guillaume Flament, Christophe Hurlin, Quentin Lajaunie and <span class="me">Yoann Pull</span></span>
+<div><span class="venue">Submitted to the Journal of Applied Econometrics</span></div>
+<div class="links">
+  <a href="https://arxiv.org/abs/2608.04469" target="_blank" rel="noopener">arXiv</a>
+  <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7106918" target="_blank" rel="noopener">SSRN</a>
+</div>
+:::
 
-- **Credit Risk under Geopolitical Uncertainty: A Methodological Framework - (2025)**
-  *with Guillaume Flament, Christophe Hurlin, Quentin Lajaunie, Yoann Pull*  
-  [Code - Incoming]() .
-  [SSRN - Incoming]()
+::: {.entry}
+<span class="year">2026</span>
+<span class="title">E-calibration: Anytime-Valid Monitoring of Probability of Default Model Calibration</span>
+<span class="authors"><span class="me">Yoann Pull</span></span>
+<div><span class="meta">Working paper</span></div>
+:::
 
-<!--## Publications
-
-- **Title of Published Paper 1** (Journal Name, Year)  
-  *with Coauthor D, Coauthor E*  
-  — [Publisher page](https://publisher.example/article){target="_blank" rel="noopener"} · [Preprint PDF](assets/papers/published1_preprint.pdf){target="_blank" rel="noopener"} · [BibTeX](assets/bib/published1.bib){target="_blank" rel="noopener"} · [DOI](https://doi.org/xx.xxxx/xxxxx){target="_blank" rel="noopener"}
-
-- **Title of Published Paper 2** (Journal Name, Year)  
-  *with Coauthor F*  
-  — [Publisher page](https://publisher.example/article2){target="_blank" rel="noopener"} · [Preprint PDF](assets/papers/published2_preprint.pdf){target="_blank" rel="noopener"} · [BibTeX](assets/bib/published2.bib){target="_blank" rel="noopener"} · [DOI](https://doi.org/xx.xxxx/xxxxx){target="_blank" rel="noopener"}-->
+::: {.entry}
+<span class="year">2026</span>
+<span class="title">Reverse Stress Testing Geopolitical Risk in Corporate Credit Portfolios: A Formal and Operational Framework</span>
+<span class="authors">Christophe Hurlin, Quentin Lajaunie and <span class="me">Yoann Pull</span></span>
+<div class="links">
+  <a href="https://arxiv.org/abs/2601.03983" target="_blank" rel="noopener">arXiv</a>
+</div>
+:::

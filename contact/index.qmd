@@ -3,11 +3,16 @@ title: "Contact"
 page-layout: article
 format:
   html:
-    css: teaching.css
+    css: ../styles.css
+    link-external-newwindow: true
 ---
 
-If you’d like to reach out about research, collaborations, or supervision, feel free to email me or connect via LinkedIn/GitHub.
+If you'd like to reach out about research, collaborations, or supervision, feel free to email me or connect on LinkedIn or GitHub.
 
 - **Email** — [yoann.pull.pro@gmail.com](mailto:yoann.pull.pro@gmail.com)
 - **LinkedIn** — [Yoann Pull](https://www.linkedin.com/in/yoann-pull/){target="_blank" rel="noopener"}
 - **GitHub** — [YoannPull](https://github.com/YoannPull){target="_blank" rel="noopener"}
+- **Google Scholar** — [Yoann Pull](https://scholar.google.com/citations?user=lmJQgZsAAAAJ&hl=en){target="_blank" rel="noopener"}
+- **CV** — [Download (PDF)](../CV_Yoann_Pull.pdf){target="_blank" rel="noopener"}
+
+*Based in Paris, France. Visiting Stanford University (Department of Statistics), September–December 2026.*

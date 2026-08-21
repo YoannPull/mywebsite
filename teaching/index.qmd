@@ -3,22 +3,53 @@ title: "Teaching"
 page-layout: article
 format:
   html:
-    css: teaching.css
+    css: ../styles.css
+    link-external-newwindow: true
 ---
 
-Below are my main courses, with materials. For each course I indicate where it was taught and provide PDF/Slides links.
+I teach graduate-level courses on statistical learning, econometrics, and financial risk management. Materials are linked where available.
 
 ## Courses
 
-- **Support Vector Machines (SVM)**.  
-  *Taught at:* University of Orléans, Master ESA (M2) -  (Fall 2025)  
-  **Materials:** [PDF - French version](courses/SVM_Course_fr.pdf){target="_blank" rel="noopener"} · [PDF - English version](courses/SVM_Course_en.pdf){target="_blank" rel="noopener"} . [Slides](slides/Support_Vector_Machines.pdf){target="_blank" rel="noopener"}  <!-- remove if no slides -->
-  
+::: {.entry}
+<span class="year">2025 – present</span>
+<span class="title">Machine Learning: Support Vector Machines</span>
+<div><span class="venue">M.Sc. in Econometrics and Applied Statistics (ESA), University of Orléans — Lecturer</span></div>
+<span class="meta">Classification and regression, primal and dual formulations, soft-margin SVM, kernel methods, and practical applications in Python.</span>
+<div class="links">
+  <a href="courses/SVM_Course_en.pdf" target="_blank" rel="noopener">Notes (EN)</a>
+  <a href="courses/SVM_Course_fr.pdf" target="_blank" rel="noopener">Notes (FR)</a>
+  <a href="slides/Support_Vector_Machines.pdf" target="_blank" rel="noopener">Slides</a>
+</div>
+:::
 
-- **Interpretable Machine Learning (SVM)**.  
-  *Taught at:* University of Orléans, Master ESA (M2) -  (Fall 2025)  
-  **Materials:** [Slides](slides/Master ESA 2025 - Interpretable Machine Learning.pdf){target="_blank" rel="noopener"}  <!-- remove if no slides -->
+::: {.entry}
+<span class="year">2025 – present</span>
+<span class="title">Interpretable Machine Learning</span>
+<div><span class="venue">M.Sc. in Econometrics and Applied Statistics (ESA), University of Orléans — Lecturer</span></div>
+<span class="meta">Model interpretability and explainability, model-agnostic methods, partial dependence plots, ICE, ALE, surrogate models, LIME, and Shapley values (SHAP).</span>
+<div class="links">
+  <a href="slides/Master%20ESA%202025%20-%20Interpretable%20Machine%20Learning.pdf" target="_blank" rel="noopener">Slides</a>
+</div>
+:::
 
-- **Integrating Climate Risk into Financial Risk Management **.  
-  *Taught at:* University of Bordeaux, Master IREF (M2) - Fall 2024  
-  *Taught at:* ENSAI (M2)  - Fall 2024  
+::: {.entry}
+<span class="year">2024 – present</span>
+<span class="title">Climate Risk and Financial Risk Management</span>
+<div><span class="venue">ENSAI and University of Bordeaux — Lecturer</span></div>
+<span class="meta">Transmission channels from physical and transition climate risk to credit, market, and underwriting risk; implications for banking and insurance risk management and for regulatory climate stress-testing exercises.</span>
+:::
+
+::: {.entry}
+<span class="year">2026 – present <span class="badge-soft">Forthcoming</span></span>
+<span class="title">Deep Learning for Time Series</span>
+<div><span class="venue">M.Sc. in Financial Engineering, Paris Dauphine University – PSL — Lecturer</span></div>
+<span class="meta">Deep learning for time-series modelling and forecasting: recurrent and convolutional architectures, modern sequence models, attention-based methods, transformers, and recent implementations such as Kolmogorov–Arnold Networks.</span>
+:::
+
+::: {.entry}
+<span class="year">2026 – present <span class="badge-soft">Forthcoming</span></span>
+<span class="title">Regularization Methods</span>
+<div><span class="venue">M.Sc. in Applied Mathematics and Statistics (Financial Engineering), University of Bordeaux — Lecturer</span></div>
+<span class="meta">Penalized regression, Ridge, Lasso, Elastic Net, model selection, sparsity and shrinkage, the bias–variance trade-off, and practical implementation.</span>
+:::

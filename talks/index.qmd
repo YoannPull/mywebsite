@@ -1,0 +1,40 @@
+---
+title: "Talks & Seminars"
+page-layout: article
+format:
+  html:
+    css: ../styles.css
+    link-external-newwindow: true
+---
+
+Selected conference presentations and seminars.
+
+::: {.entry}
+<span class="year">June 2026</span>
+<span class="title">18th Annual Society for Financial Econometrics (SoFiE) Conference</span>
+<div><span class="venue">University of Macau — Macau, China</span></div>
+:::
+
+::: {.entry}
+<span class="year">March 2026</span>
+<span class="title">19th Financial Risks International Forum</span>
+<div><span class="venue">Institut Louis Bachelier — Paris, France</span></div>
+:::
+
+::: {.entry}
+<span class="year">November 2025</span>
+<span class="title">Research Seminar</span>
+<div><span class="venue">Laboratoire d'Économie d'Orléans, University of Orléans — Orléans, France</span></div>
+:::
+
+::: {.entry}
+<span class="year">June 2025</span>
+<span class="title">QFFE 2025 — Quantitative Finance and Financial Econometrics</span>
+<div><span class="venue">Aix-Marseille School of Economics — Marseille, France</span></div>
+:::
+
+::: {.entry}
+<span class="year">December 2024</span>
+<span class="title">ARAE — Association for Research in Applied Econometrics</span>
+<div><span class="venue">Université Paris Dauphine-PSL — Paris, France</span></div>
+:::
