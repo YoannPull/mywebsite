@@ -1,66 +1,79 @@
 ---
 page-layout: full
-format: 
+format:
   html:
     link-external-newwindow: true
     css: styles.css
-embed-resources: true
 ---
 
-<!-- ~/Desktop/personal_website/personal_website/index.qmd -->
+::::: {.hero}
+:::: {.hero-left}
+![](Yoann_Pull.jpg){.hero-photo fig-alt="Yoann Pull"}
 
-<!-- Gradient de fond -->
-<div class="gradient-background" style="background: linear-gradient(135deg, #ffffff, #c0c0c0); position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: -1;">
+<div class="hero-links">
+  <a href="CV_Yoann_Pull.pdf" target="_blank" rel="noopener">📄 CV</a>
+  <a href="https://scholar.google.com/citations?user=lmJQgZsAAAAJ&hl=en" target="_blank" rel="noopener">🎓 Scholar</a>
+  <a href="https://www.linkedin.com/in/yoann-pull/" target="_blank" rel="noopener">in LinkedIn</a>
+  <a href="https://github.com/YoannPull" target="_blank" rel="noopener">GitHub</a>
+</div>
+::::
+
+:::: {.hero-right}
+<div class="hero-status"><span class="dot"></span> Visiting Stanford University · Sept–Dec 2026</div>
+<div class="hero-name">Yoann Pull</div>
+<div class="hero-title">PhD Candidate in Economics</div>
+<div class="hero-affil">Laboratoire d'Économie d'Orléans · Square Management</div>
+<div class="hero-tagline">I build anytime-valid and Bayesian methods for validating and monitoring credit-risk models in real time.</div>
+::::
+:::::
+
+::: {.about}
+
+## About
+
+I am a PhD candidate in Economics at the [Laboratoire d'Économie d'Orléans (LEO)](https://www.leo-univ-orleans.fr/en/){target="_blank" rel="noopener"}, University of Orléans, and a research scientist at [Square Management](https://www.square-management.com/){target="_blank" rel="noopener"} through the French CIFRE programme. I work under the supervision of [Professor Christophe Hurlin](https://sites.google.com/view/christophe-hurlin/home){target="_blank" rel="noopener"}..
+
+My research develops robust econometric, Bayesian, and sequential-testing methods to measure and monitor emerging risks in credit portfolios. At Square Management I conduct research and advisory work for banking institutions on probability-of-default calibration, model validation, and stress testing.
+
+From September to December 2026, I will be a **Visiting Student Researcher** in the [Department of Statistics at Stanford University](https://statistics.stanford.edu/){target="_blank" rel="noopener"}, hosted by [Professor Aaditya Ramdas](https://web.stanford.edu/~aramdas/){target="_blank" rel="noopener"}, working on sequential and anytime-valid inference.
+
+<div class="interests">
+<strong>Research interests:</strong> financial econometrics · credit risk modelling and model validation · stress testing · Bayesian and sequential inference · sequential testing · time series and forecasting · climate risk.
 </div>
 
-<!-- Conteneur principal avec la photo et le texte, visible au chargement -->
-<div class="container" style="text-align: center; padding-top: 50px; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-  
-  <!-- Photo de profil using Quarto Markdown syntax -->
-  ![Profile Photo](Yoann_Pull.jpg){width=300px height=300px style="border-radius: 50%; border: 2px solid #c0c0c0;"}
+:::
 
-  <!-- Nom plus petit et sous-titre -->
-  <h1 style="font-size: 24px; color: #404140; margin-top: 20px;">Yoann Pull</h1>
-  <p style="font-size: 18px; color: #404140;">PhD Candidate in Economics</p>
-  
-  <!-- Texte "Scroll Down" qui apparaîtra après un délai -->
-  <p id="scroll-text" style="color: #404140; opacity: 0; transition: opacity 1s;">↓ Scroll down to learn more ↓</p>
+::: {.news}
+
+## News
+
+<div class="news-list">
+
+<div class="news-item is-new">
+<div class="news-date">Sep 2026</div>
+<div class="news-body">Starting a research visit at the <strong>Department of Statistics, Stanford University</strong>, hosted by Professor Aaditya Ramdas.</div>
 </div>
 
-<!-- Section de description -->
-<div id="description" style="padding: 80px 20px; text-align: center; background-color: rgba(255, 255, 255, 0.8); border-radius: 10px; border: 1px solid #e0e0e0;">
-  <h2 style="color: #404140; font-weight: normal; text-shadow: none;">About Me</h2>
-  <p style="color: #404140; margin-top: 20px; font-size: 18px; line-height: 1.6;">
-    I'm Yoann Pull, a PhD candidate in Economics at the 
-    <a href="https://www.leo-univ-orleans.fr/en/" target="_blank" rel="noopener" style="color: #000000; text-decoration: underline;">Laboratoire d'Économie d'Orléans (LEO)</a>, University of Orléans, 
-    and a quantitative researcher at Square Management. I am doing my PhD under the supervision of 
-    <a href="https://sites.google.com/view/christophe-hurlin/home" target="_blank" rel="noopener" style="color: #000000; text-decoration: underline;">Professor Christophe Hurlin</a>. 
-    I develop robust econometric and machine-learning methods to measure new and emerging risks in credit risk. 
-    I have taught courses at the University of Orléans, the University of Bordeaux, and ENSAI.
-  </p>
-  <p style="color: #404140; font-size: 18px; line-height: 1.6;">
-    On this site you’ll find my research papers and some teaching resources. You can also 
-    <a href="CV_Yoann.pdf" target="_blank" style="color: #000000; text-decoration: underline;">download my CV (PDF)</a> 
-    and find ways to reach me on the contact page.
-  </p>
-  <p style="color: #404140; font-size: 18px; line-height: 1.6;">
-    <strong>Research interests:</strong> financial econometrics; machine learning; credit risk; alternative data; emerging risks.
-  </p>
+<div class="news-item">
+<div class="news-date">Jun 2026</div>
+<div class="news-body">Presenting at the <strong>18th Annual SoFiE Conference</strong>, University of Macau.</div>
 </div>
 
+<div class="news-item">
+<div class="news-date">2026</div>
+<div class="news-body">Our paper on Bayesian probability-of-default calibration was <strong>accepted at the European Journal of Operational Research</strong>.</div>
+</div>
 
+<div class="news-item">
+<div class="news-date">Mar 2026</div>
+<div class="news-body">Presented at the <strong>19th Financial Risks International Forum</strong>, Institut Louis Bachelier, Paris.</div>
+</div>
 
+<div class="news-item">
+<div class="news-date">Nov 2025</div>
+<div class="news-body">Research seminar at the <strong>Laboratoire d'Économie d'Orléans</strong>, University of Orléans.</div>
+</div>
 
+</div>
 
-
-<!-- JavaScript pour afficher le texte "Scroll down" après un délai -->
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const scrollText = document.getElementById('scroll-text');
-    
-    // Délais avant l'apparition du texte "Scroll down"
-    setTimeout(function() {
-      scrollText.style.opacity = 1;
-    }, 2000); // délai de 2 secondes
-  });
-</script>
+:::
