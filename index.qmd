@@ -31,7 +31,7 @@ format:
 
 ## About
 
-I am a PhD candidate in Economics at the [Laboratoire d'Économie d'Orléans (LEO)](https://www.leo-univ-orleans.fr/en/){target="_blank" rel="noopener"}, University of Orléans, and a research scientist at [Square Management](https://www.square-management.com/){target="_blank" rel="noopener"} through the French CIFRE programme. I work under the supervision of [Professor Christophe Hurlin](https://sites.google.com/view/christophe-hurlin/home){target="_blank" rel="noopener"}..
+I am a PhD candidate in Economics at the [Laboratoire d'Économie d'Orléans (LEO)](https://www.leo-univ-orleans.fr/en/){target="_blank" rel="noopener"}, University of Orléans, and a research scientist at [Square Management](https://www.square-management.com/){target="_blank" rel="noopener"} through the French CIFRE programme. I work under the supervision of [Professor Christophe Hurlin](https://sites.google.com/view/christophe-hurlin/home){target="_blank" rel="noopener"}.
 
 My research develops robust econometric, Bayesian, and sequential-testing methods to measure and monitor emerging risks in credit portfolios. At Square Management I conduct research and advisory work for banking institutions on probability-of-default calibration, model validation, and stress testing.
 
