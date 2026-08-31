@@ -27,7 +27,7 @@ My research develops robust econometric, Bayesian, and sequential methods for cr
 <span class="year">2026</span>
 <span class="title">Generalized Impulse Responses of Portfolio Default Probabilities: A Modular Framework with an Application to Geopolitical Risk</span>
 <span class="authors">Guillaume Flament, Christophe Hurlin, Quentin Lajaunie and <span class="me">Yoann Pull</span></span>
-<div><span class="venue">Submitted to the Journal of Applied Econometrics</span></div>
+<div><span class="meta">Submitted</span></div>
 <div class="links">
   <a href="https://arxiv.org/abs/2608.04469" target="_blank" rel="noopener">arXiv</a>
   <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7106918" target="_blank" rel="noopener">SSRN</a>

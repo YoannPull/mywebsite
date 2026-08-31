@@ -1,269 +1,458 @@
-/*@font-face {
-  font-family: "myfont";
-  src: url('gb.ttf') format('truetype'); /* Assurez-vous que le chemin et le format sont corrects */
-/*}*/
+/* ==========================================================================
+   Yoann Pull — personal website
+   Clean academic-minimal theme
+   ========================================================================== */
 
-/*@font-face {
-  font-family: "fraunces";
-  src: url('fraunces.ttf') format('truetype'); /* Assurez-vous que le chemin et le format sont corrects */
-/*}*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
 
-/* Style de la vidéo en fond */
-.video-background {
-  position: fixed;
-  top: 0;
+/* ---- Design tokens ------------------------------------------------------- */
+:root {
+  --bg:        #fbfaf7;   /* warm off-white           */
+  --surface:   #ffffff;   /* cards / panels           */
+  --ink:       #1c1c1a;   /* primary text             */
+  --muted:     #6b6b64;   /* secondary text           */
+  --line:      #e7e4dc;   /* hairline borders         */
+  --accent:    #3d5a80;   /* muted slate blue         */
+  --accent-2:  #2c4560;   /* darker hover             */
+  --radius:    14px;
+  --maxw:      780px;
+  --serif:     'Fraunces', Georgia, 'Times New Roman', serif;
+  --sans:      'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ---- Base ---------------------------------------------------------------- */
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--serif);
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.1rem; }
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2.6rem;
+  margin-bottom: 1.1rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--line);
+  position: relative;
+}
+h2::after {
+  content: "";
+  position: absolute;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10; /* Place la vidéo derrière tout */
-  overflow: hidden;
+  bottom: -1px;
+  width: 46px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+h3 { font-size: 1.15rem; }
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.18s ease, border-color 0.18s ease;
+  border-bottom: 1px solid transparent;
+}
+a:hover {
+  color: var(--accent-2);
+  border-bottom-color: var(--accent-2);
 }
 
-#bg-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-  z-index: -10;
-  object-fit: cover;
+p { margin-bottom: 1.1rem; }
+
+/* Keep article content in a comfortable measure */
+main.content,
+#quarto-document-content {
+  max-width: var(--maxw);
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Navbar transparente qui ne bloque pas la vidéo */
+/* ---- Navbar -------------------------------------------------------------- */
 .navbar {
-  background-color: transparent; /* Navbar totalement transparente */
-  color: #ffffff; /* Texte blanc pour contraste sur la vidéo */
-  padding: 15px 20px;
-  position: absolute; /* Absolute pour qu'elle ne prenne pas de place dans le flux */
-  width: 100%; /* Prend toute la largeur de l'écran */
-  top: 0;
-  z-index: 1; /* La navbar est toujours au-dessus de la vidéo mais transparente */
+  background-color: rgba(251, 250, 247, 0.85) !important;
+  backdrop-filter: saturate(140%) blur(8px);
+  -webkit-backdrop-filter: saturate(140%) blur(8px);
+  border-bottom: 1px solid var(--line);
+  padding: 0.6rem 0;
 }
 
-.navbar a {
-  color: black; /* Couleur du texte des liens dans la navbar */
-  font-family: 'fraunces', serif;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 10px 15px;
-  transition: color 0.3s ease;
+.navbar .navbar-brand,
+.navbar .navbar-nav .nav-link {
+  font-family: var(--serif);
+  font-weight: 500;
+  color: var(--ink) !important;
+  letter-spacing: 0.01em;
 }
 
-/* Changement de couleur lors du hover */
-.navbar a:hover {
-  color: #f5f5f5; /* Gris clair pour l'effet hover */
+.navbar .navbar-nav .nav-link {
+  font-size: 1rem;
+  padding: 0.35rem 0.9rem !important;
+  border-bottom: 2px solid transparent;
+  transition: color 0.18s ease, border-color 0.18s ease;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+  color: var(--accent) !important;
+  border-bottom-color: var(--accent);
 }
 
-/* Changement de couleur pour le lien actif */
-.navbar a.active {
-  color: #f5f5f5; /* Couleur pour le lien actif (page courante) */
+/* ---- Homepage hero ------------------------------------------------------- */
+/* ---- Editorial two-column hero ---- */
+.hero {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 3.4rem 1rem 1.4rem;
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 2.4rem;
+  align-items: start;
+  animation: fadeUp 0.9s ease both;
 }
 
-/* Changement de couleur pour le lien lorsqu'il est focalisé */
-.navbar a:focus {
-  color: #f5f5f5;
+.hero-left { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+.hero-right { padding-top: 0.3rem; }
+
+.hero-photo {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--surface);
+  box-shadow:
+    0 0 0 1px var(--line),
+    0 0 0 9px rgba(61, 90, 128, 0.06),
+    0 12px 34px rgba(28, 28, 26, 0.14);
 }
 
-/* Centrer le texte et appliquer une typographie élégante */
-.center-text {
-  text-align: center;
-  font-size: 28px;
-  font-weight: bold;
-  color: #ffffff; /* Texte blanc pour un bon contraste sur la vidéo */
-  font-family: 'fraunces', serif;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-}
-
-/* Style pour les boîtes */
-.box {
-  width: 89%;
-  height: auto;
-  padding: 30px;
-  background-color: rgba(64, 64, 65, 0.8); /* Boîte avec opacité pour voir la vidéo en dessous */
-  color: #FFFFFF; /* Texte blanc pour un bon contraste */
-  margin-bottom: 50px;
-  font-size: 20px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
-}
-
-/* Ajuster les conteneurs pour un meilleur alignement */
-.container {
-  display: flex;
-  flex-direction: column;
+/* Status pill */
+.hero-status {
+  display: inline-flex;
   align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.7rem;
+  padding: 0.32rem 0.85rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--accent-2);
+  background: #eef2f6;
+  border: 1px solid #dde6ee;
+  border-radius: 999px;
+}
+.hero-status .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 3px rgba(61, 90, 128, 0.18);
+}
+
+.hero-name {
+  font-family: var(--serif);
+  font-size: 2.7rem;
+  font-weight: 600;
+  margin: 0 0 0.15rem;
+  line-height: 1.05;
+}
+
+.hero-title {
+  font-size: 1.2rem;
+  color: var(--ink);
+  margin-bottom: 0.1rem;
+}
+
+.hero-affil {
+  font-size: 1rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+/* Research one-liner */
+.hero-tagline {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.12rem;
+  color: var(--ink);
+  margin: 0 0 1rem;
+  line-height: 1.5;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--accent);
+}
+
+/* Social / link row */
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
   justify-content: center;
-  min-height: 100vh;
-  padding: 50px 0;
+}
+.hero-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.95rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+.hero-links a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: #fff;
 }
 
-/* Style du footer transparent au-dessus de la vidéo */
-.footer {
-  text-align: center;
-  padding: 20px;
-  background-color: transparent; /* Footer transparent pour voir la vidéo en dessous */
-  color: #ffffff; /* Texte blanc */
-  font-family: 'Georgia', serif;
+/* About / prose block on home */
+.about {
+  max-width: var(--maxw);
+  margin: 2.2rem auto 0;
+  animation: fadeUp 1.1s ease both;
+}
+.about h2 { margin-top: 1.6rem; }
+
+.interests {
+  margin-top: 1.4rem;
+  padding: 1.1rem 1.3rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font-size: 0.98rem;
+}
+.interests strong { color: var(--ink); }
+
+/* ---- News / updates stream ---- */
+.news {
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+.news-list {
+  margin-top: 0.4rem;
+  border-left: 2px solid var(--line);
+  padding-left: 1.4rem;
+}
+.news-item {
   position: relative;
-  z-index: 1;
+  padding: 0.55rem 0;
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 0.9rem;
+  align-items: baseline;
 }
-
-.footer a {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.footer a:hover {
-  color: grey;
-}
-
-/* Text animation styles */
-.text {
-  font-size: 12vw;
-  font-weight: bold;
-  font-family: myfont;
-  color: #ffffff; /* Blanc pur */
+.news-item::before {
+  content: "";
   position: absolute;
-  text-shadow: none; /* Grande ombre noire pour contraster sur le gris clair */
-  animation-duration: 2s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
+  left: calc(-1.4rem - 6px);
+  top: 0.95rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 2px solid var(--accent);
 }
+.news-item.is-new::before { background: var(--accent); }
+.news-date {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.news-body { font-size: 0.98rem; line-height: 1.55; }
 
-.mini {
-  font-family: myfont;
-  font-size: 2vw;
-  font-weight: light;
-  color: #ffffff; /* Couleur blanche pour le texte */
+/* ---- Featured paper ------------------------------------------------------ */
+.featured {
   position: relative;
-  top: 180px;
-  text-align: center;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Ombre noire pour le texte, améliorant le contraste */
+  margin: 1.4rem 0 0.5rem;
+  padding: 1.5rem 1.6rem;
+  background:
+    linear-gradient(180deg, #f3f6f9 0%, var(--surface) 70%);
+  border: 1px solid #dde6ee;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 26px rgba(61, 90, 128, 0.08);
 }
-
-
-.text-left {
-  animation-name: textLeft;
+.featured .kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-2);
+  margin-bottom: 0.6rem;
 }
-
-.text-right {
-  animation-name: textRight;
-}
-
-@keyframes textLeft {
-  0% {
-    left: -50%;
-  }
-  100% {
-    left: 18%;
-    transform: translateX(0%);
-  }
-}
-
-@keyframes textRight {
-  0% {
-    right: -50%;
-  }
-  100% {
-    right: 20%;
-    transform: translateX(50%);
-  }
-}
-
-/* Combined text and after effects */
-#combined {
-  display: none;
-}
-
-#after {
-  display: none;
-}
-
-@keyframes combineText {
-  0% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-#combined.show {
+.featured .f-title {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ink);
   display: block;
-  animation: combineText 1s forwards;
+  margin-bottom: 0.4rem;
 }
-
-@keyframes afterText {
-  0% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.featured .authors { color: var(--ink); font-size: 0.98rem; }
+.featured .authors .me { text-decoration: underline; text-underline-offset: 2px; }
+.featured .venue {
+  display: inline-block;
+  margin-top: 0.15rem;
+  color: var(--accent-2);
+  font-weight: 600;
+  font-size: 0.95rem;
 }
-
-#after.show {
-  display: block;
-  animation: afterText 4s backwards;
+.featured .summary {
+  margin: 0.8rem 0 0.2rem;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--ink);
 }
-
-.navbar a.active {
-  color: #ffffff !important; /* Blanc pur */
-  background-color: transparent !important;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Ombre noire subtile */
+.featured .links { margin-top: 0.9rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.featured .links a {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.28rem 0.8rem;
+  border: 1px solid #cfdae6;
+  border-radius: 999px;
+  color: var(--accent);
+  background: var(--surface);
 }
+.featured .links a:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 
-
-/* Texte de défilement en bas de l'écran */
-.scroll-down {
-  font-family: 'fraunces', serif;
-  font-size: 20px;
-  color: #ffffff; /* Couleur blanche pour contraster avec le fond */
+/* ---- Publication / entry cards ------------------------------------------- */
+.entry {
   position: relative;
-  top: 220px; /* Ajuster cette valeur pour placer le texte en bas */
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Petite ombre pour améliorer la lisibilité */
-  opacity: 0; /* Initialement invisible */
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-  transform: translateY(10px); /* Déplacement initial vers le bas */
+  overflow: hidden;
+  padding: 1.15rem 1.3rem;
+  margin-bottom: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+.entry::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--accent);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.22s ease;
+}
+.entry:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(28, 28, 26, 0.09);
+  border-color: #d9d5ca;
+}
+.entry:hover::before { transform: scaleY(1); }
+.entry .title {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.08rem;
+  color: var(--ink);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.entry .authors { color: var(--ink); font-size: 0.96rem; }
+.entry .authors .me { text-decoration: underline; text-underline-offset: 2px; }
+.entry .venue { color: var(--muted); font-style: italic; font-size: 0.95rem; }
+.entry .meta  { color: var(--muted); font-size: 0.9rem; }
+
+/* Pill links inside entries */
+.entry .links { margin-top: 0.6rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.entry .links a {
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0.2rem 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent);
+}
+.entry .links a:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+/* Right-aligned year tag */
+.entry .year {
+  float: right;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 500;
+  margin-left: 1rem;
 }
 
-.scroll-down.show {
-  opacity: 1; /* Rendre visible */
-  transform: translateY(0); /* Remonter à la position normale */
+.badge-soft {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.12rem 0.55rem;
+  border-radius: 999px;
+  background: #eef2f6;
+  color: var(--accent-2);
+  vertical-align: middle;
 }
 
+/* ---- Footer -------------------------------------------------------------- */
+.nav-footer {
+  border-top: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.nav-footer a { color: var(--muted); }
+.nav-footer a:hover { color: var(--accent); border-bottom-color: transparent; }
 
-/* Ajouter un fond semi-transparent derrière la section de description */
-#description {
-  background-color: rgba(0, 0, 0, 1); /* Fond noir semi-transparent */
-  padding: 50px;
-  border-radius: 10px; /* Pour adoucir les bords */
+/* ---- Animation ----------------------------------------------------------- */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; scroll-behavior: auto !important; }
 }
 
-/* Texte avec une ombre plus marquée */
-#description h2, #description p {
-  text-shadow: none; /* Ombre plus forte pour un meilleur contraste */
-  color: #ffffff; /* Couleur blanche */
+/* ---- Responsive ---------------------------------------------------------- */
+@media (max-width: 720px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+    text-align: center;
+    padding-top: 2.6rem;
+  }
+  .hero-right { padding-top: 0; }
+  .hero-tagline {
+    border-left: 0;
+    padding-left: 0;
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-
-
+@media (max-width: 600px) {
+  body { font-size: 1rem; }
+  .hero-name { font-size: 2rem; }
+  .hero-photo { width: 150px; height: 150px; }
+  h1 { font-size: 1.7rem; }
+  .entry .year { float: none; display: block; margin: 0 0 0.3rem; }
+  .news-item { grid-template-columns: 1fr; gap: 0.15rem; }
+}

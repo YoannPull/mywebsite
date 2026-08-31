@@ -41,14 +41,14 @@ I teach graduate-level courses on statistical learning, econometrics, and financ
 :::
 
 ::: {.entry}
-<span class="year">2026 – present <span class="badge-soft">Forthcoming</span></span>
+<span class="year">2026 <span class="badge-soft">Forthcoming</span></span>
 <span class="title">Deep Learning for Time Series</span>
 <div><span class="venue">M.Sc. in Financial Engineering, Paris Dauphine University – PSL — Lecturer</span></div>
 <span class="meta">Deep learning for time-series modelling and forecasting: recurrent and convolutional architectures, modern sequence models, attention-based methods, transformers, and recent implementations such as Kolmogorov–Arnold Networks.</span>
 :::
 
 ::: {.entry}
-<span class="year">2026 – present <span class="badge-soft">Forthcoming</span></span>
+<span class="year">2026 <span class="badge-soft">Forthcoming</span></span>
 <span class="title">Regularization Methods</span>
 <div><span class="venue">M.Sc. in Applied Mathematics and Statistics (Financial Engineering), University of Bordeaux — Lecturer</span></div>
 <span class="meta">Penalized regression, Ridge, Lasso, Elastic Net, model selection, sparsity and shrinkage, the bias–variance trade-off, and practical implementation.</span>

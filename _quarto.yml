@@ -1,7 +1,11 @@
 project:
   type: website
   output-dir: docs
+
 website:
+  title: "Yoann Pull"
+  description: "PhD Candidate in Economics — financial econometrics, credit risk, sequential inference."
+  favicon: Yoann_Pull.jpg
   cookie-consent:
     type: express
     style: simple
@@ -13,6 +17,7 @@ website:
   navbar:
     background: "transparent"
     foreground: "black"
+    pinned: true
     right:
       - text: "Home"
         href: index.qmd
@@ -20,23 +25,29 @@ website:
         href: research/index.qmd
       - text: "Teaching"
         href: teaching/index.qmd
+      - text: "Talks"
+        href: talks/index.qmd
       - text: "Contact"
         href: contact/index.qmd
-  page-footer: 
+
+  page-footer:
     background: "transparent"
     foreground: "black"
-    left: "Copyright 2024" 
-    right: 
+    left: "&copy; 2026 Yoann Pull"
+    right:
       - icon: linkedin
         href: https://www.linkedin.com/in/yoann-pull/
-      - icon: github 
+        aria-label: LinkedIn
+      - icon: github
         href: https://github.com/YoannPull
+        aria-label: GitHub
       - icon: envelope
-        href: mailto:yoann.pull.pro@gmail.com    
+        href: contact/index.qmd
+        aria-label: Contact
 
 format:
   html:
-    #theme: mint
+    theme: cosmo
     css: styles.css
     toc: false
     include-in-header: gtm_code_head.html
