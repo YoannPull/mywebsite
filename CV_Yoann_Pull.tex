@@ -1,0 +1,359 @@
+%
+% Academic CV LaTeX Template
+% Adapted for Yoann Pull
+%
+\documentclass[a4paper,11pt]{article}
+% Package imports
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+% cfr-lm gives a refined Latin Modern; fall back to lmodern if unavailable.
+\IfFileExists{cfr-lm.sty}{\usepackage{cfr-lm}}{\usepackage{lmodern}}
+\usepackage[T1]{fontenc}
+% fontawesome5 is optional (icons); load only if installed.
+\IfFileExists{fontawesome5.sty}{\usepackage{fontawesome5}}{}
+\usepackage[most]{tcolorbox}
+\usepackage[hidelinks]{hyperref}
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+% Page layout
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[R]{\scriptsize\itshape\color{gray!55!black}Last updated: \today}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{12pt}
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+% Custom box settings
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,
+    outer arc=0pt,
+}
+% URL style
+\urlstyle{same}
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabularx}{0.98\textwidth}[t]{X r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabularx}
+    \vspace{-2.4mm}
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]\small}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]\small}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+% Font options
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont}
+\begin{document}
+\headerfontiii
+% Header
+\begin{center}
+    {\Huge\textbf{Yoann PULL}}
+\end{center}
+\vspace{-6mm}
+\begin{center}
+    \small{
+    Paris, France \;|\;
+    \href{mailto:yoann.pull.pro@gmail.com}{yoann.pull.pro@gmail.com} \;|\;
+    +33 7 74 01 58 98
+    }
+\end{center}
+\vspace{-6mm}
+\begin{center}
+    \small{
+    \href{https://yoannpull.github.io/mywebsite/}{Website} \;|\;
+    \href{https://scholar.google.com/citations?user=lmJQgZsAAAAJ\&hl=en\&oi=ao}{Google Scholar} \;|\;
+    \href{https://www.linkedin.com/in/yoann-pull/}{LinkedIn} \;|\;
+    \href{https://github.com/YoannPull}{GitHub}
+    }
+\end{center}
+\vspace{-4mm}
+% Current Position
+\section{\textbf{Current Position}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeSubheading
+{PhD Candidate in Economics}{Orléans, France}
+{University of Orléans, Laboratoire d'Économie d'Orléans}{October 2024 -- Present}
+\resumeItemListStart
+\item Thesis title: \textit{Robust Econometric Methods for Credit Risk Model Validation, Monitoring, and Stress Testing}.
+\item Supervisor: Professor \href{https://sites.google.com/view/christophe-hurlin/home}{Christophe Hurlin}.
+\resumeItemListEnd
+\resumeSubheading
+{Research Scientist}{Paris, France}
+{Square Management}{September 2024 -- Present}
+\resumeItemListStart
+\item Industry partner for the CIFRE PhD programme.
+\item Conduct research and consulting assignments for banking institutions on credit risk modelling, probability of default calibration, model validation, and stress testing.
+\item Develop econometric, Bayesian, and sequential testing methods for financial risk management and credit portfolio monitoring.
+\item Design and deliver training sessions for banking and insurance clients on the impact of climate risk on financial risks.
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+% Research Interests
+\section{\textbf{Research Interests}}
+\vspace{1mm}
+{\small
+Financial econometrics, credit risk modelling and model validation, and stress testing; Bayesian and sequential inference, anytime-valid inference, e-values and test martingales, and high-dimensional statistics.
+}
+\vspace{-2mm}
+% Visiting Positions
+\section{\textbf{Visiting Positions}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Visiting Student Researcher}{Stanford, CA, United States}
+{Department of Statistics, Stanford University}{Fall 2026}
+\resumeItemListStart
+\item Host: Professor \href{https://www.stat.cmu.edu/~aramdas/}{Aaditya Ramdas}. Research on sequential and anytime-valid inference.
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+% Education
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeSubheading
+{PhD in Economics}{Orléans, France}
+{Laboratoire d'Économie d'Orléans, University of Orléans}{2024 -- Present}
+\resumeSubheading
+{M.Sc. in Applied Mathematics and Statistics, Financial Engineering Track}{Bordeaux, France}
+{University of Bordeaux}{2022 -- 2024}
+\resumeItemListStart
+\item Main fields: probability, statistics, applied mathematics, financial econometrics, quantitative finance, risk management, time series, machine learning, and credit risk.
+\resumeItemListEnd
+\resumeSubheading
+{B.Sc. in Pure Mathematics}{Bordeaux, France}
+{University of Bordeaux}{2019 -- 2022}
+\resumeItemListStart
+\item Main fields: measure theory, probability, statistics, optimization, linear algebra, and abstract algebra.
+\resumeItemListEnd
+\resumeSubheading
+{First Year of B.Sc. in Mathematics}{Punaauia, Tahiti, French Polynesia}
+{University of French Polynesia}{2018 -- 2019}
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+% Funding
+\section{\textbf{Funding}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeProject
+  {CIFRE Doctoral Fellowship}
+  {ANRT, Square Management, University of Orléans}
+  {2024 -- 2028}
+  {Industry--academic doctoral funding}
+\resumeItemListStart
+\item Doctoral funding awarded under the French CIFRE programme for an industry--academic research project on credit risk model validation, monitoring, and stress testing.
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+% Publications
+\section{\textbf{Publications}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeProject
+  {A Bayesian Approach to Probability of Default Model Calibration: Theoretical and Empirical Insights on the Jeffreys Test}
+  {Christophe Hurlin and Yoann Pull}
+  {Accepted, 2026}
+  {\href{https://www.sciencedirect.com/science/article/abs/pii/S0377221726004509}{European Journal of Operational Research}}
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+% Working Papers
+\section{\textbf{Working Papers}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeProject
+  {Generalized Impulse Responses of Portfolio Default Probabilities: A Modular Framework with an Application to Geopolitical Risk}
+  {Guillaume Flament, Christophe Hurlin, Quentin Lajaunie and Yoann Pull}
+  {2026}
+  {\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7106918}{SSRN: 7106918}}
+\resumeItemListStart
+\item Submitted. Preprint available on \href{https://arxiv.org/abs/2608.04469}{arXiv: 2608.04469}.
+\resumeItemListEnd
+\resumeProject
+  {E-calibration: Anytime-Valid Monitoring of Probability of Default Model Calibration}
+  {Yoann Pull}
+  {2026}
+  {Working paper}
+\resumeProject
+  {Reverse Stress Testing Geopolitical Risk in Corporate Credit Portfolios: A Formal and Operational Framework}
+  {Christophe Hurlin, Quentin Lajaunie and Yoann Pull}
+  {2026}
+  {\href{https://arxiv.org/abs/2601.03983}{arXiv preprint: 2601.03983}}
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+% Conference Presentations and Seminars
+\section{\textbf{Conference Presentations and Seminars}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeProject
+  {18th Annual Society for Financial Econometrics Conference}
+  {Society for Financial Econometrics, University of Macau}
+  {June 2026}
+  {Macau, China}
+\resumeProject
+  {19th Financial Risks International Forum}
+  {Institut Louis Bachelier}
+  {March 2026}
+  {Paris, France}
+\resumeProject
+  {Research Seminar}
+  {Laboratoire d'Économie d'Orléans, University of Orléans}
+  {November 2025}
+  {Orléans, France}
+\resumeProject
+  {QFFE 2025 -- Quantitative Finance and Financial Econometrics}
+  {Aix-Marseille School of Economics}
+  {June 2025}
+  {Marseille, France}
+\resumeProject
+  {ARAE -- Association for Research in Applied Econometrics}
+  {Université Paris Dauphine-PSL}
+  {December 2024}
+  {Paris, France}
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+% Teaching
+\section{\textbf{Teaching}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeProject
+  {Climate Risk and Financial Risk Management}
+  {ENSAI and University of Bordeaux}
+  {2024 -- present}
+  {Lecturer}
+\resumeItemListStart
+\item Transmission channels from physical and transition climate risk to credit, market, and underwriting risk; implications for banking and insurance risk management, and for regulatory climate stress testing exercises.
+\resumeItemListEnd
+\resumeProject
+  {\href{https://yoannpull.github.io/mywebsite/teaching/courses/SVM_Course_en.pdf}{Machine Learning: Support Vector Machines}}
+  {M.Sc. in Econometrics and Applied Statistics (ESA), University of Orléans}
+  {2025 -- Present}
+  {Lecturer}
+\resumeItemListStart
+\item Support vector machines for classification and regression, primal and dual formulations, soft-margin SVM, kernel methods, and practical applications in Python.
+\resumeItemListEnd
+\resumeProject
+  {\href{https://yoannpull.github.io/mywebsite/teaching/slides/Master\%20ESA\%202025\%20-\%20Interpretable\%20Machine\%20Learning.pdf}{Interpretable Machine Learning}}
+  {M.Sc. in Econometrics and Applied Statistics (ESA), University of Orléans}
+  {2025 -- Present}
+  {Lecturer}
+\resumeItemListStart
+\item Model interpretability and explainability, model-agnostic methods, partial dependence plots, ICE, ALE, surrogate models, LIME, Shapley values, and SHAP.
+\resumeItemListEnd
+\resumeProject
+  {Deep Learning for Time Series}
+  {M.Sc. in Financial Engineering, Paris Dauphine University -- PSL}
+  {2026}
+  {Lecturer, forthcoming}
+\resumeItemListStart
+\item Deep learning methods for time series modelling and forecasting, from recurrent and convolutional architectures to modern sequence models, attention-based methods, transformers, and recent implementations such as Kolmogorov--Arnold Networks.
+\resumeItemListEnd
+\resumeProject
+  {Regularization Methods}
+  {M.Sc. in Applied Mathematics and Statistics, Financial Engineering Track, University of Bordeaux}
+  {2026}
+  {Lecturer, forthcoming}
+\resumeItemListStart
+\item Regularization methods for statistical learning, including theoretical foundations, penalized regression, Ridge, Lasso, Elastic Net, model selection, sparsity, shrinkage, the bias--variance trade-off, and practical implementation.
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+% Research and Professional Experience
+\section{\textbf{Research and Professional Experience}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Square Management}{Paris, France}
+{Quantitative Research Intern}{March 2024 -- September 2024}
+\resumeItemListStart
+\item Integrated climate risk into asset evaluation models based on Fama--French factors.
+\item Estimated the impact of climate risk at the company and sector levels using panel regressions.
+\item Conducted literature reviews and drafted research material on density forecasting for Value-at-Risk and Expected Shortfall estimation.
+\resumeItemListEnd
+\resumeSubheading
+{Institut de la Statistique de la Polynésie Française (ISPF)}{Papeete, Tahiti, French Polynesia}
+{Data Scientist Intern --- official statistical institute of French Polynesia}{May 2023 -- August 2023}
+\resumeItemListStart
+\item Contributed to data processing work for the population census of French Polynesia.
+\item Created OLAP cubes using SSAS and SQL to facilitate internal data usage.
+\item Contributed to the implementation of machine learning methods for missing-data imputation.
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+% Skills
+\section{\textbf{Skills}}
+\vspace{-0.4mm}
+\resumeHeadingSkillStart
+\resumeSubItem{Statistics and Econometrics:}
+    {Sequential testing, e-values, test martingales, high-dimensional statistics, Bayesian statistics, financial econometrics, credit risk modelling, probability of default calibration, stress testing, and model validation.}
+\resumeSubItem{Programming:}
+    {Python, R, SQL, Git, Shiny.}
+\resumeSubItem{Document Creation:}
+    {LaTeX, Markdown, Microsoft Office.}
+\resumeSubItem{Languages:}
+    {French -- native; English -- C1.}
+\resumeHeadingSkillEnd
+\end{document}
